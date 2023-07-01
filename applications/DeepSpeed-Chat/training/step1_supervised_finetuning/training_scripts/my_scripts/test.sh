@@ -17,8 +17,8 @@ mkdir -p $OUTPUT
 
 deepspeed --num_gpus 1 main.py \
     --model_name_or_path bigscience/bloom-560m \
-    --per_device_train_batch_size 4　\
-    --per_device_eval_batch_size 4 \
+    --per_device_train_batch_size 2　\
+    --per_device_eval_batch_size 2 \
     --max_seq_len 512 \
     --gradient_accumulation_steps 16 \
     --lora_dim 128 \
