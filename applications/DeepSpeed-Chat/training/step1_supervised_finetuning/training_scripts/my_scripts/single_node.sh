@@ -19,10 +19,10 @@ deepspeed main.py \
    --model_name_or_path bigscience/bloom-560m \
    --per_device_train_batch_size 2 \
    --per_device_eval_batch_size 2 \
-   --max_seq_len 512 \
+   --max_seq_len 256 \
    --learning_rate 9.65e-6 \
    --weight_decay 0. \
-   --num_train_epochs 16 \
+   --num_train_epochs 1 \
    --gradient_accumulation_steps 2 \
    --lr_scheduler_type cosine \
    --num_warmup_steps 0 \
